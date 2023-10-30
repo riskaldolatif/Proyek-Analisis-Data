@@ -217,7 +217,7 @@ with tab2:
     st.pyplot(fig)
 
 
-# Membuat bar chart untuk Negara dengan jumlah pelanggan terbesar
+# Membuat bar chart untuk Negara dan kota dengan jumlah pelanggan terbesar
 st.header('Jumlah Pelanggan Terbesar Berdasarkan Kota dan Negara')
 
 tab1, tab2 = st.tabs(["Berdasarkan Kota", "Berdasarkan Negara"])
@@ -286,7 +286,7 @@ sns.barplot(
     x="payment_type",
     data=customer_payment_type_df.sort_values(by="number_of_users", ascending=False),
     palette=colors)
-plt.title("Number of Customer by State", loc="center", fontsize=15)
+
 plt.ylabel(None)
 plt.xlabel(None)
 plt.tick_params(axis='x', labelsize=12)
