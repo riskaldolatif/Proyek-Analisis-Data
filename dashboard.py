@@ -88,7 +88,7 @@ def create_rfm_df(df):
 
 
 # Load cleaned data
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("https://drive.google.com/u/0/uc?id=1n1kNHwHm4WqfqiwLEI6PLEQmPTRyWVRH&export=download")
 
 
 datetime_columns = ["order_purchase_timestamp", "order_estimated_delivery_date"]
